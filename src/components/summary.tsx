@@ -32,14 +32,14 @@ export default function Summary() {
           />
         </div>
         <Image
-          src="/diagram-mobile.svg"
+          src="diagram-mobile.svg"
           alt="Progression diagram"
           width="342"
           height="352"
           className="block lg:hidden"
         />
         <Image
-          src="/diagram-desktop.svg"
+          src="diagram-desktop.svg"
           alt="Progression diagram"
           width="560"
           height="560"

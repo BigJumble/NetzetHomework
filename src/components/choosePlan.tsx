@@ -4,20 +4,21 @@ import { useAppContext } from "@/context";
 import PlanRadio from "./planRadio";
 import { Plan, Plans } from "@/plans";
 import GradientButton from "./gradientButton";
+import { getBasePath } from "@/utils/path";
 
 export default function ChoosePlan() {
   const { selectedPlan, setCheckoutOpen } = useAppContext();
   return (
     <div className="grid">
       <Image
-        src="/sky-wave-desktop.svg"
+        src="sky-wave-desktop.svg"
         alt="sky color wave"
         width={0}
         height={0}
         className="hidden h-[162px] w-full translate-y-[2px] lg:block"
       />
       <Image
-        src="/sky-wave-mobile.svg"
+        src="sky-wave-mobile.svg"
         alt="sky color wave"
         width={0}
         height={0}
@@ -52,7 +53,7 @@ export default function ChoosePlan() {
           <div className="flex flex-col items-center gap-[24px] xl:flex-row xl:gap-[40px]">
             <div className="flex w-[342px] items-center gap-[19px] xl:w-[371px] xl:gap-[16px]">
               <Image
-                src="/guarantee.svg"
+                src="guarantee.svg"
                 alt="money back guarantee icon"
                 width={52}
                 height={52}
@@ -67,7 +68,7 @@ export default function ChoosePlan() {
               </p>
             </div>
             <Image
-              src="/cards.png"
+              src={getBasePath("/cards.png")}
               alt="visa, mastercard, visa electron and maestro icons"
               width={263}
               height={38}
@@ -76,14 +77,14 @@ export default function ChoosePlan() {
         </div>
       </div>
       <Image
-        src="/sky-wave-desktop.svg"
+        src="sky-wave-desktop.svg"
         alt="sky color wave"
         width={0}
         height={0}
         className="hidden h-[162px] w-full translate-y-[-2px] scale-y-[-1] lg:block"
       />
       <Image
-        src="/sky-wave-mobile.svg"
+        src="sky-wave-mobile.svg"
         alt="sky color wave"
         width={0}
         height={0}

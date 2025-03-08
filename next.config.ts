@@ -1,14 +1,24 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  output: "export",
-  distDir: "out",
+let nextConfig: NextConfig = {
+    /* config options here */
 };
 
-if (!!process.env.ROUTE) {
-    nextConfig.basePath = `/${process.env.ROUTE?.trim()}`;
-    nextConfig.assetPrefix = `/${process.env.ROUTE?.trim()}`;
+// config so it would work on GitHub Pages
+if (process.env.ROUTE) {
+    nextConfig = {
+        output: "export",
+        distDir: "out",
+        basePath: `/${process.env.ROUTE?.trim()}`,
+        assetPrefix: `/${process.env.ROUTE?.trim()}`,
+        images: {
+            unoptimized: true,
+        },
+    }
 }
+
+
+
+
 
 export default nextConfig;
