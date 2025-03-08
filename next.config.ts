@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
 
 if (!!process.env.ROUTE) {
     nextConfig.basePath = `/${process.env.ROUTE?.trim()}`;
+    nextConfig.assetPrefix = `/${process.env.ROUTE?.trim()}`;
 }
 
 export default nextConfig;
