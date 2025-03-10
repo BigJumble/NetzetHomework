@@ -7,16 +7,18 @@
   --color-mint-700: #134a47; /* Boxes / Shapes */
   --color-mint-750: #0c3f3d; /* Choose Plan background */
   --color-mint-500: #1e6864; /* Lighter Shapes */
+  --color-mint-450: #0e7a82; /* checkout */
   --color-mint-300: #327b7b; /* Edges of shapes / countdown */
   --color-mint-200: #2e7b7a; /* Sliders / loading */
   --color-mint-100: #d7eeeb; /* Background transition shade */
-  --color-mint-50: #a8c6c4;  /* Radio button */
+  --color-mint-50: #a8c6c4; /* Radio button */
 
   --color-pink-500: #f175b9;
   --color-purple-500: #8089ff;
   --color-sky-500: #3df7ff;
 
   --color-blue-400: #5a91ff;
+  --color-gray-300: #ECE9E3;
 }
 
 :root {
