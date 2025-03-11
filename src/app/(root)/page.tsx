@@ -2,9 +2,11 @@
 import TopLogo from "../../components/toplogo";
 import Summary from "../../components/summary";
 import ChoosePlan from "../../components/choosePlan";
+
 export default function Home() {
+
   return (
-    <div className="grid">
+    <div className={`grid`}>
       <TopLogo />
       <Summary />
       <ChoosePlan />
