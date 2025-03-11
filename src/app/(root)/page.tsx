@@ -2,6 +2,7 @@
 import TopLogo from "../../components/toplogo";
 import Summary from "../../components/summary";
 import ChoosePlan from "../../components/choosePlan";
+import ImgBlocks from "@/components/imgBlocks";
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
       <TopLogo />
       <Summary />
       <ChoosePlan />
+      <ImgBlocks/>
       {/* <ChoosePlan /> */}
     </div>
   );

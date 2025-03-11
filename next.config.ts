@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 let nextConfig: NextConfig = {
     /* config options here */
+
+    images: {
+        unoptimized: true,
+    },
 };
 
 // config so it would work on GitHub Pages
