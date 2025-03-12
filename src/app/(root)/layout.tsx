@@ -1,6 +1,6 @@
 "use client";
 
-import CheckoutPopup from "@/components/checkout";
+import CheckoutPopup from "@/components/checkout/checkoutPopup";
 import Advert from "../../components/advert";
 
 export default function Layout({ children }: { children: React.ReactNode }) {

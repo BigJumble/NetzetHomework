@@ -7,12 +7,7 @@ export default function TopLogo() {
   return (
     <div>
       <div className="flex h-[100px] w-full content-center justify-center bg-mint-500">
-        <Image
-          src="logo.svg"
-          alt="logo"
-          width={110}
-          height={52}
-        />
+        <Image src="logo.svg" alt="logo" width={110} height={52} />
       </div>
       <Image
         src="green-wave.svg"
