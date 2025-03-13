@@ -1,3 +1,4 @@
+"use client";
 import { useAppContext } from "@/context";
 import { Plans } from "@/plans";
 
@@ -5,7 +6,7 @@ export default function OrderSummary() {
   const { selectedPlan } = useAppContext();
 
   return (
-    <div className="flex flex-col gap-[16px]">
+    <div className="flex flex-col gap-[16px] mt-[43px]">
       <h3 className="text-[20px] font-[600] text-mint-800">Order Summary</h3>
       <div className="flex w-[100%] flex-col gap-[16px] rounded-[16px] border-1 border-solid border-mint-50 p-[16px]">
         <div className="flex h-[19px] items-center justify-between">

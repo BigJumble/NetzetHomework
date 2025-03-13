@@ -1,9 +1,10 @@
+"use client";
 import Image from "next/image";
 import { getBasePath } from "@/utils/path";
 
 export default function PaymentMethodSelector() {
   return (
-    <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-col gap-[20px] mt-[43px]">
       <p className="text-[20px] font-[600] text-mint-800">Select Payment Method</p>
       <div className="flex gap-[11px]">
         <div className="flex h-[60px] w-[100%] items-center justify-center rounded-[24px] bg-[#FFC33A]">

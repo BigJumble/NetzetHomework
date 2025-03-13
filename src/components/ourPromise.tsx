@@ -7,7 +7,7 @@ export default function OurPromise() {
   return (
     <div className="mt-[60px] flex flex-col items-center justify-center gap-[40px] px-6 md:mt-[80px]">
       <div className="relative max-w-[790px] rounded-3xl bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500 md:rounded-[40px]">
-        <div className="absolute z-[-1] h-full w-full rounded-3xl bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500 blur-md md:rounded-[40px]" />
+        {/* <div className="absolute z-[-1] h-full w-full rounded-3xl bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500 blur-md md:rounded-[40px]" /> */}
         <div className="flex h-full w-full flex-col items-center rounded-3xl border-1 border-solid border-transparent bg-white bg-clip-padding md:rounded-[40px]">
           <div className="flex flex-col items-center justify-center gap-[28px] p-[40px_24px_0px_24px] md:p-[40px_56px_0px_56px]">
             <h3 className="text-[28px] leading-[28px] font-bold text-mint-800 md:text-4xl">

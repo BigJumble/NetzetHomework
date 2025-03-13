@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import OrderSummary from "./orderSummary";
 import PaymentMethodSelector from "./paymentMethodSelector";
 import CreditCardForm from "./creditCardForm";
+import { getBasePath } from "@/utils/path";
 
 export default function CheckoutPopup() {
   const { setCheckoutOpen, checkoutOpen } = useAppContext();
@@ -27,7 +28,7 @@ export default function CheckoutPopup() {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="grid w-[100%] max-w-[600px] my-auto gap-[43px] rounded-[24px] border-1 border-mint-500 bg-white p-[24px_24px_40px_24px]">
+        className="grid w-[100%] max-w-[600px] my-auto rounded-[24px] border-1 border-mint-500 bg-white p-[24px_24px_40px_24px]">
         <div className="grid gap-[4px]">
           <Image
             onClick={() => {
@@ -57,6 +58,13 @@ export default function CheckoutPopup() {
         <OrderSummary />
         <PaymentMethodSelector />
         <CreditCardForm />
+        <Image
+            src={getBasePath("/cards-3.png")}
+            width={262}
+            height={31}
+            alt="visa mastercard discover maestro image"
+            className="justify-self-center mt-[32px]"
+          />
       </div>
     </div>
   );

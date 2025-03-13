@@ -1,8 +1,9 @@
+"use client";
 import { useState } from "react";
 import { z } from "zod";
 import { creditCardSchema } from "./creditCardSchema";
 import Image from "next/image";
-
+import { getBasePath } from "@/utils/path";
 type CreditCardFormData = z.infer<typeof creditCardSchema>;
 
 export default function CreditCardForm() {
@@ -89,11 +90,11 @@ export default function CreditCardForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-[14px] text-[16px] font-[400] text-mint-500 placeholder:leading-[24px] placeholder:font-[400] placeholder:text-mint-50">
+      className="space-y-[14px] text-[16px] font-[400] text-mint-500 placeholder:leading-[24px] placeholder:font-[400] placeholder:text-mint-50 mt-[20px]">
       <div className="flex items-center justify-between">
         <p className="text-[20px] font-[600] text-mint-800">Credit Card</p>
         <Image
-          src="/cards-2.png"
+          src={getBasePath("/cards-2.png")}
           width={119.11}
           height={23.26}
           alt="mastercard visa maestro image"

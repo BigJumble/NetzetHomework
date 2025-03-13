@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import GradientButton from "./gradientButton";
+import { useAppContext } from "@/context";
 
 export default function Advert() {
   const [countdown, setCountdown] = useState(600);
-
+  const { setCheckoutOpen } = useAppContext();
   useEffect(() => {
     const interval = setInterval(() => {
       setCountdown((prevCount) => {
@@ -45,7 +46,7 @@ export default function Advert() {
         </div>
       </div>
       
-      <GradientButton onClick={()=>{}} className="h-[48px] w-[146px] min-w-[146px] rounded-[8px] text-[14px] sm:w-[240px]">GET MY PLAN</GradientButton>
+      <GradientButton onClick={()=>{setCheckoutOpen(true)}} className="h-[48px] w-[146px] min-w-[146px] rounded-[8px] text-[14px] sm:w-[240px]">GET MY PLAN</GradientButton>
     </div>
   );
 }
