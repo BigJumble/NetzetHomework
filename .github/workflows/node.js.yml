@@ -1,4 +1,4 @@
-name: Deploy Ouroboros chat app
+name: Deploy Homework page
 on:
   push:
     branches: [ main ]
