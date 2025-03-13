@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useAppContext } from "@/context";
 import { Plan, Plans } from "@/plans";

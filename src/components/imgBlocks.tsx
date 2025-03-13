@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function ImgBlocks() {
   return (
     <div className="flex flex-col items-center justify-center gap-[24px] p-[60px_24px] lg:flex-row lg:gap-[35px] lg:p-[110px_0px_100px_0px]">
-      <div className="relative flex h-[542px] lg:h-[594px] lg:w-[402px] w-[336px] flex-col rounded-3xl bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500">
+      <div className="relative flex h-[542px] w-[336px] flex-col rounded-3xl bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500 lg:h-[594px] lg:w-[402px]">
         <div className="absolute z-[-1] h-full w-full rounded-3xl bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500 blur-md" />
         <div className="h-full w-full rounded-3xl border-1 border-solid border-transparent bg-white bg-clip-padding">
           <Image
@@ -59,7 +59,7 @@ export default function ImgBlocks() {
         alt="three arrows graphic"
         className="hidden lg:block"
       />
-      <div className="relative flex h-[542px] lg:h-[594px] lg:w-[402px] w-[336px] flex-col rounded-3xl bg-gradient-to-r from-pink-400 via-blue-400 to-sky-500">
+      <div className="relative flex h-[542px] w-[336px] flex-col rounded-3xl bg-gradient-to-r from-pink-400 via-blue-400 to-sky-500 lg:h-[594px] lg:w-[402px]">
         <div className="absolute z-[-1] h-full w-full rounded-3xl bg-gradient-to-r from-pink-400 via-blue-400 to-sky-500 blur-md" />
         <div className="h-full w-full rounded-3xl border-1 border-solid border-transparent bg-white bg-clip-padding">
           <Image
