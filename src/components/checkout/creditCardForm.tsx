@@ -38,7 +38,7 @@ export default function CreditCardForm() {
       const cleaned = value.replace(/\D/g, "");
       if (cleaned.length <= 4) {
         let formatted = cleaned;
-        if (cleaned.length > 2) {
+        if (cleaned.length >= 2) {
           formatted = cleaned.slice(0, 2) + "/" + cleaned.slice(2);
         }
         setFormData({
