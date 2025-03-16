@@ -41,6 +41,9 @@ export default function CreditCardForm() {
         if (cleaned.length >= 2) {
           formatted = cleaned.slice(0, 2) + "/" + cleaned.slice(2);
         }
+        if (formData.expiryDate.endsWith("/") && value.length <= 2) {
+          formatted = value;
+        }
         setFormData({
           ...formData,
           [name]: formatted,
